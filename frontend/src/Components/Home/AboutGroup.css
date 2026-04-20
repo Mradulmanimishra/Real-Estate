@@ -1,0 +1,84 @@
+.AboutGroupDiv{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.AboutGroupDiv>.left{
+    height: 100%;
+    width: 50%;
+}
+.AboutGroupDiv>.left>.title{
+    margin-top: 20%;
+    margin-left: 20%;
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.AboutGroupDiv>.left>.sub-tile{
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 1.1rem;
+    width: 60%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+}
+.AboutGroupDiv>.left>.buy-btn{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.AboutGroupDiv>.left>.buy-btn > button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 1.1rem;
+}
+.AboutGroupDiv>.left>.buy-btn > button:hover{
+    background-color: black;
+    color: white;
+}
+.AboutGroupDiv>.right{
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    background-image: url('../../assets/back3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-copy{
+    height: 3%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+}
+.main-copy>.reserve{
+    margin-left: 50px;
+}
+.main-copy>.designby{
+    margin-left: 650px;
+}
+/* ------------- Mobile View ---------------- */
+@media screen and (max-width: 600px) {
+    .AboutGroupDiv>.left{
+        height: 100%;
+        width: 100%;
+    }
+    .AboutGroupDiv>.right{
+        height: 80%;
+        width: 100%;
+        background-image: url('../../assets/back1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+}

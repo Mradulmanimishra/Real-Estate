@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["python310"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["python backend/manage.py collectstatic --no-input"]
+
+[start]
+cmd = "gunicorn backend.wsgi:application --chdir backend --bind 0.0.0.0:$PORT --workers 2"

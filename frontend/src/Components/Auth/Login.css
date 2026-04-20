@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.LoginMainDiv{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+.LoginMainDiv > .Loginleft{
+    height: 100%;
+    width: 60%;
+}
+.Loginleft> .CompanyTitle{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.Loginleft > .logintitle{
+    text-align: center;
+    margin-top: 18%;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.Loginleft > .loginDetail{
+    text-align: center;
+    margin-top: 1%;
+    height: 50%;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.Loginleft > .loginDetail > input{
+    width: 40%;
+    height: 10%;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color: #EDF4F2;
+    margin-top: 20px;
+    padding: 10px 10px;
+    margin-left: 30px;
+}
+.Loginleft > .loginDetail > button{
+    margin-top: 45px;
+    width: 20%;
+    height: 10%;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color:#27B397;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.Loginleft > .loginDetail > button:hover{
+    cursor: pointer;
+    background-color: #1c8d73;
+    transform: scale(1.05);
+   
+}   
+.LoginMainDiv > .Loginright{
+    height: 100%;
+    width: 40%;
+    background-image: url('../../assets/LoginBack1.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LoginMainDiv > .Loginright > .newhere{
+    margin-top: 40%;
+    margin-left: 40%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.LoginMainDiv > .Loginright > .loginsubtitle{
+        margin-left: 32%;
+        margin-top: 5%;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: white;
+}
+.LoginMainDiv > .Loginright > .signup-btn{
+    margin-left: 41%;
+    margin-top: 7%;
+}
+.LoginMainDiv > .Loginright > .signup-btn > button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.LoginMainDiv > .Loginright > .signup-btn > button:hover{
+    cursor: pointer;
+    background-color: #00659D;
+    color: white;
+}
+.SingupMainDiv{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+.SingupMainDiv > .signupleft{
+    height: 100%;
+    width: 40%;
+    background-image: url('../../assets/LoginBack1.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.SingupMainDiv > .signupleft > .Signuptitle{
+    margin-top: 40%;
+    margin-left: 25%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.SingupMainDiv > .signupleft > .singup-slogon{
+        margin-left: 28%;
+        margin-top: 3%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: lighter;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+}
+.SingupMainDiv > .signupleft > .sign-btn{
+    margin-left: 28%;
+    margin-top: 7%;
+}
+.SingupMainDiv > .signupleft > .sign-btn > button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.SingupMainDiv > .signupleft > .sign-btn > button:hover{
+    cursor: pointer;
+    background-color: #00659D;
+    color: white;
+}
+.SingupMainDiv > .signupRight{
+    height: 100%;
+    width: 60%;
+}
+.SingupMainDiv > .signupRight>.Signuptitle-2{
+    margin-top: 18%;
+    margin-left: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.SingupMainDiv > .signupRight>.signupDetail{
+    height: 60%;
+    width: 50%;
+    /* border: 2px solid red; */
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.SingupMainDiv > .signupRight>.signupDetail > input{
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 2%;
+    background-color: #EDF4F2;
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 0 10px;
+}
+.SingupMainDiv > .signupRight>.signupDetail > button{
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #27B397;
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.SingupMainDiv > .signupRight>.signupDetail > button:hover{
+    cursor: pointer;
+    background-color: #1c8d73;
+    color: white;
+}
+
+/* Auth feedback messages */
+.AuthError {
+    margin: 0 auto 10px;
+    width: 60%;
+    padding: 10px 14px;
+    background: #fdecea;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    color: #c0392b;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.AuthErrorSignup {
+    width: 80%;
+    margin: 0 auto 10px;
+}
+.AuthSuccess {
+    margin: 0 auto 10px;
+    width: 60%;
+    padding: 10px 14px;
+    background: #eafaf1;
+    border: 1px solid #a9dfbf;
+    border-radius: 8px;
+    color: #1e8449;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Disable state */
+.Loginleft > .loginDetail > button:disabled,
+.SingupMainDiv > .signupRight > .signupDetail > button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Dev verify helper */
+.DevVerifyBox {
+    margin: 0 auto 12px;
+    width: 65%;
+    padding: 12px 16px;
+    background: #fff8e1;
+    border: 1.5px solid #f39c12;
+    border-radius: 8px;
+    text-align: center;
+}
+.DevVerifyBox p {
+    font-size: 0.82rem;
+    color: #856404;
+    margin-bottom: 8px;
+}
+.DevVerifyBtn {
+    padding: 8px 16px;
+    background: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.DevVerifyBtn:hover { background: #d68910; }

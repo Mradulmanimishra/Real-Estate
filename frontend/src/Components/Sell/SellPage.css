@@ -1,0 +1,396 @@
+/* --- SELL PAGE BASE STYLING --- */
+.SellPageDiv {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('../../assets/SellBack3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Sellnavbar {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.Sellnavbar .Selllogo {
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.Sellnavbar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Sellnavbar>.Sellleft {
+    width: 50%;
+    height: 100%;
+}
+
+.Sellnavbar>.Sellright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sellnavbar>.Sellright>nav>a {
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+/* --- SELL FORM CONTAINER --- */
+.SellForm {
+    overflow: hidden;
+    margin-top: 2%;
+    height: 86%;
+    width: 65%;
+        background-image: url('../../assets/SellBack3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    margin-left: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- AESTHETIC STATUS BAR --- */
+.StatusBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 40px;
+    background-color: #f8fbff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.status-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.status-step label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Progress line */
+.StatusBar::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    right: 150px;
+    height: 4px;
+    background-color: #e0e0e0;
+    z-index: 0;
+}
+
+/* Circle styling */
+.radio {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.radio.active {
+    background-color: #6C63FF;
+    color: white;
+}
+
+.radio.completed {
+    background-color: #00C49A;
+    color: white;
+}
+
+.BasicPropertyInfo {
+    overflow: hidden;
+    margin-top: 3%;
+    height: 75%;
+    background-color: transparent;
+    width: 85%;
+    margin-left: 7%;
+    border-radius: 10px;
+    color: black;
+}
+
+.BasicPropertyInfo>.heading-1 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 20px 20px;
+}
+
+.BasicPropertyInfo>table {
+    margin: 15px 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.BasicPropertyInfo td {
+    padding: 10px;
+}
+
+.BasicPropertyInfo .td-1 {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BasicPropertyInfo .td-1>span {
+    font-size: 0.7rem;
+    color: black;
+}
+
+.BasicPropertyInfo input,
+.BasicPropertyInfo select,
+.BasicPropertyInfo textarea {
+    width: 70%;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: black;
+}
+
+.BasicPropertyInfo button {
+    padding: 6px;
+    width: 80px;
+    margin-right: 10px;
+    border: 2px solid black;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.BasicPropertyInfo button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Navigation Buttons */
+.BasicPropertyInfo .Next {
+    background-color: #00a581;
+    color: white;
+    border: none;
+    width: 120px;
+    font-size: 1.2rem;
+    height: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.BasicPropertyInfo .Next:hover {
+    background-color: #047d62;
+}
+
+.BasicPropertyInfo .Prev {
+    background-color: transparent;
+    border: 2px solid #41A7DA;
+    color: black;
+    width: 120px;
+    font-size: 1.2rem;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.BasicPropertyInfo .Prev:hover {
+    background-color: #187aac;
+    color: black;
+}
+
+/* Slide transitions */
+.slide-form {
+    display: none;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+    position: absolute;
+    width: 85%;
+    height: 75%;
+}
+
+.slide-form.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+
+/* Responsive for Mobile */
+
+@media screen and (max-width: 600px) {
+    .SellPageDiv {
+
+        background-image: url('../../assets/SellBack3.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .SellForm {
+        height: 90vh;
+        width: 95vw;
+        margin-left: 2%;
+        padding: 0;
+        overflow: hidden;
+        background-image: url('../../assets/SellBac3.jpg');
+        background-size: auto;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .Sellnavbar>.Sellright>nav>a {
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    .Sellnavbar {
+        height: 8%;
+        margin-top: 15px;
+    }
+
+    .Sellnavbar .Sellleft {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .Sellnavbar .Sellright {
+        width: 40%;
+    }
+
+    .Sellnavbar .Selllogo {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .BasicPropertyInfo {
+        height: 90%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .BasicPropertyInfo>.heading-1 {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .BasicPropertyInfo>table {
+        margin: 5px 5px;
+    }
+
+    .BasicPropertyInfo td {
+        padding: 5px;
+        color: #000;
+    }
+
+    .BasicPropertyInfo .td-1 {
+        font-size: 0.9rem;
+        /* border: 2px solid red; */
+    }
+
+    .BasicPropertyInfo .td-1>span {
+        display: none;
+    }
+
+    .BasicPropertyInfo input,
+    .BasicPropertyInfo select,
+    .BasicPropertyInfo textarea {
+        width: 75%;
+        padding: 3px;
+        border: 2px solid black;
+        font-size: 0.7rem;
+    }
+
+    .BasicPropertyInfo button {
+        padding: 4px;
+        width: 70px;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-size: 0.7rem;
+    }
+
+    .BasicPropertyInfo .Next {
+        width: 100px;
+        font-size: 1rem;
+    }
+
+    .BasicPropertyInfo .Prev {
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: black;
+    }
+
+    /* ---Satust Bar Mobile view ----- */
+    .StatusBar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 10px;
+    }
+
+    .status-step {
+        text-align: center;
+        flex: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    .status-step label {
+        font-size: 0.6rem;
+    }
+
+    /* Progress line */
+    .StatusBar::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        right: 30px;
+        height: 4px;
+        background-color: #e0e0e0;
+        z-index: 0;
+    }
+
+    /* Circle styling */
+    .radio {
+        width: 30px;
+        height: 30px;
+    }
+
+}

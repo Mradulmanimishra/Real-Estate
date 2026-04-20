@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.MainHome {
+    width: 100vw;
+}
+
+/* Add to your CSS files */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentdiv {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.navbar {
+    height: 10%;
+    width: 100%;
+    background-color:transparent;
+}
+
+.navbar>.left-part {
+    height: 100%;
+    width: 50%;
+    float: left;
+    color: white;
+}
+
+.logo {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.navbar>.right-part-desktop {
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.navbar>.right-part-desktop>ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar>.right-part-desktop>ul>li {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.navbar>.right-part-desktop>ul>li:hover {
+    color: #ccc;
+}
+
+.navbar>.right-part-mobile {
+    display: none;
+}
+
+.text-slide{
+    height: 40%;
+    overflow-y: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.text-slide>.text-slide-content{
+    margin-top: 120px;
+}
+
+.text-slide>.text-slide-content>.subtitle{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.text-slide>.text-slide-content>.title{
+    margin-top: 10px;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+.slogan-1{
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.slogan-2{
+    height: 30%;
+    display: flex;
+    margin-top: 80px;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.slogan-2 > .buttons{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.slogan-2 > .buttons > .button-1, .button-2,.button-1{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.slogan-2 > .buttons > .button-1, .button-2:hover,.button-1:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Project Section - Below the hero section */
+.Project {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+
+    .navbar>.right-part-desktop {
+        display: none;
+    }
+
+    .navbar>.right-part-mobile {
+        display: inline;
+        font-size: 30px;
+        color: white;
+        float: right;
+        margin-right: 30px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        height: 100vh;
+        width: 50vw;
+        color: white;
+        float: right;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 3;
+        position: relative;
+        backdrop-filter: blur(10px);
+    }
+
+    .mobile-menu>ul {
+        margin-top: 100px;
+    }
+
+    .mobile-menu>ul>li {
+        cursor: pointer;
+        list-style: none;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-menu>ul>li:hover {
+        color: #ccc;
+    }
+
+    .text-slide>.text-slide-content>.title{
+        font-size: 2.5rem;
+    }
+
+    .text-slide>.text-slide-content>.subtitle{
+        font-size: 1.1rem;
+    }
+
+    .slogan-2{
+        font-size: 1rem;
+    }
+
+    .slogan-2 > .buttons > button{
+        width: 120px;
+        height: 35px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}

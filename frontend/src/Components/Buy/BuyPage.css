@@ -1,0 +1,444 @@
+.BuyPageContainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* Header */
+.BuyHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1c1e;
+    padding: 15px 40px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.BuyLogo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.BuyHeaderNav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.BuyHeaderNav a, .BuyHeaderNav .Sellbtn {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.BuyHeaderNav a:hover, .BuyHeaderNav .Sellbtn:hover { color: #fff; }
+
+/* Hero */
+.BuyIntro {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #6C63FF 0%, #00C49A 100%);
+    color: white;
+}
+.BuyIntro h1 { font-size: 2.8rem; margin-bottom: 10px; }
+.BuyIntro p { font-size: 1.2rem; opacity: 0.9; }
+
+/* Filter Bar */
+.FilterBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    align-items: center;
+}
+.FilterInput, .FilterSelect {
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #fafafa;
+}
+.FilterInput:focus, .FilterSelect:focus { border-color: #6C63FF; }
+.FilterSearch { flex: 2; min-width: 200px; }
+.FilterPrice { width: 140px; }
+.FilterBtn {
+    padding: 10px 24px;
+    background: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.FilterBtn:hover { background: #4b42cc; }
+.FilterResetBtn {
+    padding: 10px 18px;
+    background: transparent;
+    color: #666;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.FilterResetBtn:hover { border-color: #999; color: #333; }
+
+/* Compare Bar */
+.CompareBar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 40px;
+    background: #fff8e1;
+    border-bottom: 2px solid #f39c12;
+    font-size: 0.95rem;
+    color: #555;
+}
+.CompareBtn {
+    padding: 8px 18px;
+    background: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.CompareBtn:hover { background: #d68910; }
+.CompareClearBtn {
+    padding: 8px 14px;
+    background: transparent;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Results Count */
+.ResultsCount {
+    padding: 12px 40px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Listings Grid */
+.BuyListings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    padding: 20px 40px 40px;
+}
+
+/* Card */
+.BuyCardLink { text-decoration: none; color: inherit; }
+.BuyCard {
+    background: white;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+}
+.BuyCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+}
+.BuyCard img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.no-image {
+    width: 100%;
+    height: 190px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Status Badge */
+.StatusBadge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+
+/* Heart Button */
+.HeartBtn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, background 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.HeartBtn:hover { transform: scale(1.15); }
+.HeartBtn.hearted { color: #e74c3c; }
+
+/* Card Info */
+.BuyCardInfo { padding: 16px; }
+.BuyCardInfo h2 { font-size: 1.1rem; margin-bottom: 6px; color: #1a1c1e; }
+.BuyLocation { color: #6c757d; font-size: 0.88rem; margin-bottom: 8px; }
+.BuyCardMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.BuyType, .BuyBed, .BuySize {
+    background: #f1f3f5;
+    font-size: 0.78rem;
+    padding: 3px 9px;
+    border-radius: 20px;
+    color: #555;
+}
+.BuyPrice {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+.BuyCardActions { display: flex; gap: 8px; }
+.BuyBtn {
+    flex: 1;
+    padding: 9px 0;
+    background: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.BuyBtn:hover { background: #4b42cc; }
+.CompareCardBtn {
+    padding: 9px 12px;
+    background: transparent;
+    border: 1.5px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    color: #555;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.CompareCardBtn.selected { border-color: #f39c12; color: #f39c12; background: #fff8e1; }
+.CompareCardBtn:hover { border-color: #999; }
+
+/* No Results */
+.NoResults {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+    width: 100%;
+}
+.NoResults p { font-size: 1.1rem; margin-bottom: 16px; }
+
+/* Compare Modal */
+.CompareOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.CompareModal {
+    background: white;
+    border-radius: 14px;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.CompareModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+.CompareModalHeader h2 { font-size: 1.4rem; color: #1a1c1e; }
+.CompareModalHeader button {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.CompareModalHeader button:hover { background: #f1f3f5; }
+.CompareGrid {
+    display: flex;
+    gap: 0;
+    padding: 24px;
+    gap: 16px;
+    overflow-x: auto;
+}
+.CompareCard {
+    flex: 1;
+    min-width: 220px;
+    border: 1.5px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.CompareCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.CompareTable { width: 100%; border-collapse: collapse; }
+.CompareTable td {
+    padding: 9px 12px;
+    font-size: 0.88rem;
+    border-bottom: 1px solid #f1f3f5;
+}
+.CompareTable td:first-child { color: #888; font-size: 0.82rem; width: 45%; }
+.CompareTable td:last-child { font-weight: 500; color: #1a1c1e; }
+.CompareViewBtn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #6C63FF;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.CompareViewBtn:hover { background: #4b42cc; }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .FilterBar { padding: 14px 16px; }
+    .FilterSearch { min-width: 100%; }
+    .BuyListings { padding: 16px; gap: 16px; }
+    .BuyCard { width: 100%; }
+    .BuyLogo { font-size: 0.9rem; }
+    .BuyHeaderNav { gap: 14px; font-size: 0.9rem; }
+    .CompareGrid { flex-direction: column; }
+}
+
+/* Verified filter + trend button */
+.VerifiedFilter {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 0.88rem; color: #1e8449; cursor: pointer;
+    white-space: nowrap; font-weight: 500;
+}
+.VerifiedFilter input { cursor: pointer; accent-color: #00C49A; }
+.TrendBtn {
+    padding: 10px 16px; background: #f0f0ff; color: #6C63FF;
+    border: 1.5px solid #d0d0ff; border-radius: 8px;
+    font-size: 0.9rem; cursor: pointer; font-weight: 600;
+    transition: all 0.2s; white-space: nowrap;
+}
+.TrendBtn:hover { background: #6C63FF; color: white; border-color: #6C63FF; }
+
+/* Price Trend Chart */
+.TrendChart {
+    margin: 0 40px 10px;
+    background: white; border-radius: 12px;
+    padding: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.TrendChartHeader {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 14px;
+}
+.TrendChartHeader h3 { font-size: 1rem; color: #1a1c1e; }
+.TrendChartHeader button {
+    background: none; border: none; font-size: 1.1rem;
+    cursor: pointer; color: #888; padding: 2px 6px;
+}
+
+/* Pagination */
+.Pagination {
+    display: flex; justify-content: center; align-items: center;
+    gap: 16px; padding: 24px 40px;
+}
+.Pagination button {
+    padding: 9px 20px; background: white; border: 1.5px solid #ddd;
+    border-radius: 8px; cursor: pointer; font-size: 0.9rem;
+    font-weight: 600; transition: all 0.2s; color: #555;
+}
+.Pagination button:hover:not(:disabled) { border-color: #6C63FF; color: #6C63FF; }
+.Pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+.Pagination span { font-size: 0.9rem; color: #888; }
+
+/* Recently Viewed */
+.RecentlyViewed {
+    padding: 20px 40px 10px;
+    border-top: 2px solid #f1f3f5;
+}
+.RecentlyViewed h3 { font-size: 1.1rem; color: #1a1c1e; margin-bottom: 14px; }
+.RecentGrid { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; }
+.RecentCard {
+    flex-shrink: 0; width: 150px; border-radius: 10px;
+    overflow: hidden; background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    text-decoration: none; color: inherit;
+    transition: transform 0.2s;
+}
+.RecentCard:hover { transform: translateY(-3px); }
+.RecentCard img { width: 100%; height: 90px; object-fit: cover; }
+.RecentInfo { padding: 8px 10px; }
+.RecentTitle { font-size: 0.8rem; color: #1a1c1e; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.RecentPrice { font-size: 0.82rem; color: #6C63FF; font-weight: 700; margin-top: 2px; }
+
+/* Verified badge on card */
+.BuyCard .VerifiedCardBadge {
+    position: absolute; bottom: 12px; left: 12px;
+    background: #e8f8f0; color: #1e8449;
+    border: 1px solid #a9dfbf; border-radius: 20px;
+    font-size: 0.7rem; font-weight: 700; padding: 2px 8px; z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .TrendChart { margin: 0 16px 10px; }
+    .RecentlyViewed { padding: 16px; }
+    .Pagination { padding: 16px; }
+}
